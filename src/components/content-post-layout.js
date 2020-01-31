@@ -2,31 +2,38 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Layout from "../../src/components/layout"
+import PropTypes from "prop-types"
+import Typography from "typography-theme-fairy-gates"
 import SEO from "../../src/components/seo"
-
 
 export default function PageTemplate({ data: { mdx } }) {
   return (
     <Layout>
-      <React.Fragment>
-        <tr style={{flex: 1, flexDirection:'row', flexWrap:'wrap', justifyContent: 'flex-start', width:900}}>
-      <Link to="#">
-         <td style={{fontWeight: 0.3, fontSize:24, float:'left'}}>prev</td>
-      </Link>
-      <Link to="#">
-         <td style={{fontWeight: 0.3, fontSize:24, float:'center'}}>back to blog</td>
-      </Link>
-      <Link to="#">
-         <td style={{fontWeight: 0.3, fontSize:24, float:'right'}}>prev</td>
-      </Link>
-      </tr>
-      </React.Fragment>
-      <h1>{mdx.frontmatter.title}</h1>
-      <p style={{color:"#1ca086", fontSize: 20}}>
-        {mdx.frontmatter.date}, topic: <i>{mdx.frontmatter.topic}</i>
+      <div style={{display:'inline',clear:'both'}}>
+        <h1 style={{display: 'inline'}}>blog &nbsp;</h1>
+        <Link to='/blog/' style={{display:'inline', backgroundImage:'none', fontSize: '25px'}}>
+          back
+        </Link>
+        <Link to='/blog/' style={{display:'inline', backgroundImage:'none', fontSize: '25px', float:'right'}}>
+          
+        </Link>
+      </div>
+
+
+        <h3 style={{width:'100%', textAlign:'center', fontSize:'80px', paddingTop:'100px'}}>
+          {mdx.frontmatter.title}
+        </h3>
+      <p style={{color:'#1ca086', fontSize:'30px', textAlign:'center', marginLeft:'5%', marginRight: '5%'}}>
+        <i>{mdx.frontmatter.lede}</i>
       </p>
-      
-      <MDXRenderer>{mdx.body}</MDXRenderer>
+      <p style={{textAlign:'center', paddingBottom:'30px'}}>{mdx.frontmatter.date}</p>
+      <br/>
+      <div style={{marginLeft:'10%', marginRight: '10%'}}>
+      <MDXRenderer>
+        {mdx.body}
+      </MDXRenderer>
+      </div>
+
     </Layout>
   )
 }
@@ -37,10 +44,9 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title,
-        slug,
         date,
         topic,
-        lede
+        lede,
       }
     }
   }

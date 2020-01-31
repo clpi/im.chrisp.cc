@@ -3,11 +3,16 @@ const preferDefault = m => m && m.default || m
 
 exports.components = {
   "component---src-components-content-post-layout-js": () => import("./../src/components/content-post-layout.js" /* webpackChunkName: "component---src-components-content-post-layout-js" */),
+  "component---cache-dev-404-page-js": () => import("./dev-404-page.js" /* webpackChunkName: "component---cache-dev-404-page-js" */),
+  "component---content-posts-blog-1-mdx": () => import("./../content/posts/blog1.mdx" /* webpackChunkName: "component---content-posts-blog-1-mdx" */),
+  "component---content-posts-blog-2-mdx": () => import("./../content/posts/blog2.mdx" /* webpackChunkName: "component---content-posts-blog-2-mdx" */),
+  "component---content-posts-blog-3-mdx": () => import("./../content/posts/blog3.mdx" /* webpackChunkName: "component---content-posts-blog-3-mdx" */),
   "component---src-pages-404-js": () => import("./../src/pages/404.js" /* webpackChunkName: "component---src-pages-404-js" */),
   "component---src-pages-about-js": () => import("./../src/pages/about.js" /* webpackChunkName: "component---src-pages-about-js" */),
   "component---src-pages-blog-js": () => import("./../src/pages/blog.js" /* webpackChunkName: "component---src-pages-blog-js" */),
   "component---src-pages-contact-js": () => import("./../src/pages/contact.js" /* webpackChunkName: "component---src-pages-contact-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
-  "component---src-pages-projects-js": () => import("./../src/pages/projects.js" /* webpackChunkName: "component---src-pages-projects-js" */)
+  "component---src-pages-projects-js": () => import("./../src/pages/projects.js" /* webpackChunkName: "component---src-pages-projects-js" */),
+  "component---src-pages-test-mdx": () => import("./../src/pages/test.mdx" /* webpackChunkName: "component---src-pages-test-mdx" */)
 }
 

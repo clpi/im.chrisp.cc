@@ -1,14 +1,14 @@
 var plugins = [{
-      plugin: require('/home/chrisp/Projects/imchrispcc/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/home/chrisp/Projects/im.chrisp.cc/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/home/chrisp/Projects/imchrispcc/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
-      options: {"plugins":[],"extensions":[".mdx",".md"]},
+      plugin: require('/home/chrisp/Projects/im.chrisp.cc/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
+      options: {"plugins":[],"extensions":[".mdx",".md"],"defaultLayouts":{"posts":"/home/chrisp/Projects/im.chrisp.cc/src/components/content-post-layout.js","default":"/home/chrisp/Projects/im.chrisp.cc/src/components/layout.js"}},
     },{
-      plugin: require('/home/chrisp/Projects/imchrispcc/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/home/chrisp/Projects/im.chrisp.cc/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/images/favicon/favicon-32x32.png"},
     },{
-      plugin: require('/home/chrisp/Projects/imchrispcc/node_modules/gatsby-plugin-typography/gatsby-ssr'),
+      plugin: require('/home/chrisp/Projects/im.chrisp.cc/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

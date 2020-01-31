@@ -18,12 +18,22 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          posts: require.resolve('./src/components/content-post-layout'),
+          default: require.resolve('./src/components/layout'),
+        },
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
+        path: `${__dirname}/content/posts/`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
         path: `${__dirname}/content/posts/`,
       },
     },
