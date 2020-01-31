@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{"Cuy+":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),c=n.n(a),o=(n("Wbzz"),n("Bl7J")),l=n("vrFN");t.default=function(){return c.a.createElement(o.a,null,c.a.createElement(l.a,{title:"contact"}),c.a.createElement("h1",null,"contact"),c.a.createElement("p",null,"if for some reason you need to contact me right now, email me at im@chrisp.cc"))}}}]);
+//# sourceMappingURL=component---src-pages-contact-js-4011d34e400b10c527d8.js.map

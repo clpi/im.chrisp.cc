@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"3XHS":function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),c=a.n(n),l=(a("Wbzz"),a("Bl7J")),i=a("vrFN");t.default=function(e){return c.a.createElement(l.a,{location:"/about/"},c.a.createElement(i.a,{title:"about"}),c.a.createElement("h1",null,"about"),c.a.createElement("p",null,"from seattle, recent UW grad, likes materials science, data science, linux, statistics, philosophy, strange music..."))}}}]);
+//# sourceMappingURL=component---src-pages-about-js-02a2b42c4a2af1cb6e9b.js.map
